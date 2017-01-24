@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+	<title>Car repair</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+	   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	   crossorigin="anonymous"></script>
+
+ 	<script src="jQuery.YoutubeBackground-master/src/jquery.youtubebackground_avrilkim.js"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<header class="logoSection">
+			<div class="logo">
+			<a href="#" class="biggest">CAR</a>
+				<a href="#">SERVICE</a>
+			</div>
+			<div class="adress">
+				<span>гр.София кв.Дружба, ул. Илия Бешков 11</span>
+				<p class="phone">Телефон:</p>
+				<p class="phoneNum">0884391264</p>
+			</div>
+		</header><!-- end of logoSection -->
+		<nav class="navigation">
+			<a href="home.html">Начало</a>
+			<a href="aboutUs.html">За нас</a>
+			<a href="services.html">Услуги</a>
+			<a href="price.html">Цена</a>
+			<a href="contactUs.html">Контакти</a>
+		</nav> <!-- end of navigation -->
+		<section class="priceSection">
+			<article class="prices">
+				<form>
+					<div class="priceService">
+						<div class="choiceService">
+						<p class="descriptionPrices">Изберете услуга</p>
+						<input type="checkbox" name="price" id="servPrice" value="150"/>
+						<label for="servPrice" id="description">Периодично обслужване</label><br/>
+						<input type="checkbox" name="price" value="50" id="diagnostics"/>
+						<label for="diagnostics" id="description">Диагностика</label><br/>
+						<input type="checkbox" name="price" value="200" id="engine"/>
+						<label for="engine" id="description">Ремонт на двигател</label><br/>
+						<input type="checkbox" name="price" value="150" id="system"/>
+						<label for="system" id="description">Ремонт на ел. система</label><br/>
+						<!-- <input type="checkbox" name="price" value="100" id="help"/>
+						<label for="system" id="description">Пътна помощ</label><br/> -->
+						<input type="button" onclick="calculatePrice()" class="yourChoice" value="Вие избрахте"/><br/><br/>
+					</div>
+					<div class="result">
+						<div class="order" id="order"></div>
+						<div class="totalCost" id="totalCost"></div>
+					</div>
+				</div>
+				</form>
+			</article>
+		</section> <!-- end of abUsSection -->
+		<section class="aboutUsSection">
+			<article class="workTimeSection">
+				<p class="workTime1">Работно</p>
+				<p class="workTime2">време:</p>
+				<div class="workTime">
+						<p>Понеделник - Петък:</p>
+						<p>07:00 - 18:00 ч.</p>
+						<p>Събота:</p> 
+						<p>08:00 - 14:00 ч.</p>
+						<p>24 часа пътна помощ.</p>
+				</div>
+				<a href="#" class="button">Повече <br/>информация</a>
+			</article>
+			<article class="ourServices">
+				<p>Услуги предллагани от</p>
+				<p>Car Service</p>
+				<div class="firstServ">
+					<a href="#">Диагностика</a>
+					<a href="#">Периодично обслужване</a>
+					<a href="#">Ремонт на двигател</a>
+					<a href="#">Ремонт на електрическа система</a>
+					<a href="#">Ремонт на горивни помпи и инжектори</a>
+					<a href="#">Ремонт на ходова част</a>
+					<a href="#">Спирачна система</a>
+					<a href="#">Проверка и ремонт на рейки</a>
+				</div>
+				<div class="secondServ">	
+					<a href="#">Регулаж преден и заден мост</a>
+					<a href="#">Ремонт на трансмисии</a>
+					<a href="#">Ремонт отделителна система</a>
+					<a href="#">Пълна сервизна история</a>
+					<a href="#">Мобилна диагностична сервизна група</a>
+					<a href="#">Денонощна пътна помощ</a>
+					<a href="#">Обслужване на климатични системи</a>
+				</div>
+			</article>
+			<article class="allAboutUs">
+				<span>гр.София кв.Дружба, ул. Илия Бешков 11</span>
+				<p>Телефон:</p>
+				<p>0884391264</p>
+				<p>Факс:</p> 
+				<p>+1 647 478 9843</p>
+			</article>
+		</section>
+		<footer>
+			<a href="home.html">Начало</a>
+			<a href="aboutUs.html">За нас</a>
+			<a href="services.html">Услуги</a>
+			<a href="price.html">Цена</a>
+			<a href="contactUs.html">Контакти</a>
+		</footer>
+	</div> <!-- end of wrapper -->
+
+	<!-- add javascript -->
+	 <script type="text/javascript" src="script/script.js"></script>
+</body>
+<html>
